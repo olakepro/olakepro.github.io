@@ -49,12 +49,12 @@ function date()
     let day = today.getUTCDate();
     let month = months[today.getMonth()];
     getId("month").innerHTML = month.toUpperCase();
-    getId("monthDay").innerHTML = ("🗓️" + day).slice(-7);
+    getId("monthDay").innerHTML = ("🧭" + day).slice(-7);
     getId("day").innerHTML = wordDay(today.getDay())
 }
 
 function welcomeMessage() {
-    var today = new Date() -1;
+    var today = new Date() - 1;
     var h = today.getHours() + 1;
     var userName = "olakepro";
     var message = String();
