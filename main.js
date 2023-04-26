@@ -49,7 +49,7 @@ function date()
     let day = today.getUTCDate();
     let month = months[today.getMonth()];
     getId("month").innerHTML = month.toUpperCase();
-    getId("monthDay").innerHTML = ("♦" + day-1 + "♦").slice(-3);
+    getId("monthDay").innerHTML = ("🌐" + day + "🌐").slice(-3);
     getId("day").innerHTML = wordDay(today.getDay())
 }
 
