@@ -43,7 +43,7 @@ function wordDay(int) {
 
 function date()
 {
-    const today = new Date();
+    const today = new Date() - 1;
     let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     
     let day = today.getUTCDate();
@@ -54,7 +54,7 @@ function date()
 }
 
 function welcomeMessage() {
-    var today = new Date() - 1;
+    var today = new Date();
     var h = today.getHours() + 1;
     var userName = "olakepro";
     var message = String();
