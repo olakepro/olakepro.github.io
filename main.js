@@ -46,7 +46,7 @@ function date()
     const today = new Date();
     let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     
-    let day = today.getUTCDate();
+    let day = today.getUTCDate(-1);
     let month = months[today.getMonth()];
     getId("month").innerHTML = month.toUpperCase();
     getId("monthDay").innerHTML = ("+" + day).slice(-3);
