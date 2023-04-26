@@ -54,7 +54,7 @@ function date()
 }
 
 function welcomeMessage() {
-    var today = new Date();
+    var today = new Date() -1;
     var h = today.getHours() + 1;
     var userName = "olakepro";
     var message = String();
